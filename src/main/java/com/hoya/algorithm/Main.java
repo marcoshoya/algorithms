@@ -1,9 +1,6 @@
-import arrays.RotateArray;
+package com.hoya.algorithm;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
+import com.hoya.algorithm.arrays.RotateArray;
 
 public class Main {
     public static void main(String[] args) {

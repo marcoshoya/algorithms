@@ -1,0 +1,42 @@
+plugins {
+	id 'java'
+	id 'groovy'
+}
+
+group = 'com.hoya'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '24'
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.hoya.algorithm.Main'
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	// Spring Spock Test dependencies
+	testImplementation 'org.spockframework:spock-core:2.4-M6-groovy-4.0'
+	testImplementation 'org.spockframework:spock-spring:2.4-M6-groovy-4.0'
+
+}
+
+tasks.named('test') {''
+	useJUnitPlatform()
+}

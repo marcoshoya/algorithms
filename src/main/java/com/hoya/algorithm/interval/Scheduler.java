@@ -1,4 +1,4 @@
-package interval;
+package com.hoya.algorithm.interval;
 
 import java.util.Arrays;
 import java.util.Comparator;

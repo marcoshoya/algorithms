@@ -1,4 +1,4 @@
-package arrays;
+package com.hoya.algorithm.arrays;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package strings;
+package com.hoya.algorithm.strings;
 
 import java.util.HashSet;
 import java.util.Set;
